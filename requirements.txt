@@ -1,0 +1,18 @@
+# Core ML frameworks
+torch>=1.9.0
+transformers>=4.30.0
+
+# Data processing
+pandas>=1.4.0
+numpy>=1.21.0
+
+# ML utilities
+scikit-learn>=1.0.0
+
+# Progress bars and utilities (optional but recommended)
+tqdm>=4.65.0
+
+# Development tools (optional)
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=4.0.0

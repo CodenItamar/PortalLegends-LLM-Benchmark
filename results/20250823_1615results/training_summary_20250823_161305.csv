@@ -1,0 +1,4 @@
+model_name,best_learning_rate,best_val_accuracy,model_path,hyperparams_path,timestamp
+bert,2e-05,0.6333333333333333,models/bert_model_20250823_161305.pth,models/bert_hyperparams_20250823_161305.json,20250823_161305
+distilbert,2e-05,0.7333333333333333,models/distilbert_model_20250823_161941.pth,models/distilbert_hyperparams_20250823_161941.json,20250823_161941
+roberta,3e-05,0.6333333333333333,models/roberta_model_20250823_162931.pth,models/roberta_hyperparams_20250823_162931.json,20250823_162931

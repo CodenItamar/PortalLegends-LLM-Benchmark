@@ -1,0 +1,197 @@
+num_sample,validity,player_type_name,prompt,move_desc,use_of_own_power,use_of_other_power,wrong_use_of_die,board_state,winning,portal,many_characters,going_backwards,overloaded_tile,invalid_moves,label,model_name,predicted_label,confidence_illegal,confidence_legal,predicted_validity
+54,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 25-60
+Character Positions:
+ Mystic on 24
+Move: Mystic rolls 3, lands on 33.
+board post-move:
+ Portals:
+ 1st portal: 25-60
+Character Positions:
+ Mystic on 33",מיסטיק - מתקדמת יותר מדיי,0,0,0,0,0.0,0,0,0,0,1.0,0,distilbert,1,0.1108372,0.8891628,Legal
+3,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 12-36
+Character Positions:
+Double Jumper on 10
+Move: Double Jumper rolls 4, lands on 12, warps to 36, lands on 38.
+board post-move:
+Portals:
+1st portal: 12-36
+Character Positions:
+ Double Jumper on 38",,1,0,0,0,0.0,0,0,0,0,0.0,1,distilbert,1,0.10487266,0.89512736,Legal
+7,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 11-37
+Character Positions:
+Double Jumper on 10
+Move: Double Jumper rolls 2, lands on 12.
+board post-move:
+Portals:
+1st portal: 11-37
+Character Positions:
+Double Jumper on 12",,0,0,0,0,0.0,0,0,0,0,0.0,1,distilbert,1,0.1073743,0.8926257,Legal
+16,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 6-28
+2nd portal: 73-80
+Character Positions:
+Portal Explorer on 6
+Double Jumper on 25
+Move: Double Jumper rolls 3, lands on 28, warps to 6.
+board post-move:
+Portals:
+1st portal: 6-28
+2nd portal: 73-80
+Character Positions:
+Portal Explorer on 6
+Double Jumper on 6",,0,0,0,0,0.0,1,1,1,1,0.0,1,distilbert,1,0.116391376,0.8836086,Legal
+14,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 20-42
+Character Positions:
+Double Jumper on 41
+Fortune Teller on 77
+Move: Double Jumper rolls 1, lands on to 42, warps to 20.
+board post-move:
+Portals:
+1st portal: 20-42
+Character Positions:
+Double Jumper on 20
+Fortune Teller on 77",,0,0,0,0,,1,1,0,0,0.0,1,distilbert,0,0.6498821,0.3501179,Illegal
+35,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 4-34
+Character Positions:
+ Double Jumper on 3
+ Mystic on 34
+Move: Double Jumper rolls 4, lands on 5, lands on 7.
+board post-move:
+ Portals:
+ 1st portal: 4-34
+Character Positions:
+ Double Jumper on 34
+ Mystic on 34",board state incorrect - as if he used the portal while he did not,1,0,0,1,0.0,1,1,0,1,0.0,0,distilbert,0,0.74271387,0.2572861,Illegal
+51,Legal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 40-63
+2nd portal: 70-79
+3rd portal: 20-34
+Character Positions:
+ Mystic on 30
+Portal Explorer on 99
+Move: Mystic rolls 2.
+Mystic rolls 4, lands on 34, warps to 20.
+board post-move:
+Portals:
+ 1st portal: 40-63
+2nd portal: 70-79
+3rd portal: 20-34
+Character Positions:
+ Mystic on 20
+Portal Explorer on 99",מיסטיק- יורדת בהטלה הראשונה,1,0,0,0,0.0,0,1,1,0,0.0,1,distilbert,1,0.47134244,0.52865756,Legal
+67,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 45-66
+2nd portal: 1-90
+Character Positions:
+ Mystic on 12
+Giant on 19
+Move: Mystic rolls 4, lands on 4.
+board post-move:
+ Portals:
+  1st portal: 45-66
+2nd portal: 1-90
+Character Positions:
+ Mystic on 12
+Giant on 19
+Move: Mystic rolls 4, lands on 4.",מיסטיק הולכת אחורה,0,0,0,0,0.0,1,0,1,0,1.0,0,distilbert,1,0.11735873,0.8826412,Legal
+57,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 30-55
+Character Positions:
+ Mystic on 98
+Portal Explorer on 99
+Move: Mystic rolls 1.
+Mystic rolls 6, lands on 104
+board post-move:
+ Portals:
+ 1st portal: 30-55
+Character Positions:
+ Mystic on 104
+Portal Explorer on 99",מיסטיק עוברת את 100,1,0,0,0,1.0,0,0,1,0,1.0,0,distilbert,1,0.33299378,0.66700625,Legal
+65,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 20-50
+Character Positions:
+ Mystic on 65
+Move: Mystic rolls 4.
+Mystic rolls 5, lands on 72.
+board post-move:
+ Portals:
+ 1st portal: 20-50
+Character Positions:
+ Mystic on 72
+",מיסטיק מתקדמת יותר מדיי,1,0,0,0,0.0,0,0,0,0,1.0,0,distilbert,1,0.10946002,0.89054,Legal
+18,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 15-30
+2nd portal: 25-55
+Character Positions:
+Portal Explorer on 14
+Double Jumper on 13
+Move: Double Jumper rolls 2, lands on 14, lands on 15, warps to 30
+board post-move:
+Portals:
+1st portal: 15-30
+2nd portal: 25-55
+Character Positions:
+Portal Explorer on 14
+Double Jumper on 30",,1,0,0,0,0.0,1,1,0,0,0.0,1,distilbert,1,0.11214367,0.88785636,Legal
+4,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 5-20
+Character Positions:
+Double Jumper on 19
+Move: Double Jumper rolls 2, lands on 20, warps to 5, lands on 6
+board post-move:
+Portals:
+1st portal: 5-20
+Character Positions:
+ Double Jumper on 5",,1,0,0,0,0.0,1,0,1,0,0.0,1,distilbert,1,0.113297924,0.8867021,Legal
+28,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 14-44
+Character Positions:
+ Double Jumper on 43
+ Mystic on 14
+Move: Double Jumper rolls 2 , lands on 44, warps to 14, lands on 13
+board post-move:
+ Portals:
+ 1st portal: 14-44
+Character Positions:
+ Double Jumper on 13
+ Mystic on 14",kept going backwards after traveling backwards in the portal,1,0,1,0,,1,1,1,1,1.0,0,distilbert,0,0.741383,0.25861698,Illegal
+27,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 9-31
+Character Positions:
+ Double Jumper on 99
+ Fortune Teller on 10
+Move: Double Jumper rolls 4, lands on 103
+board post-move:
+ Portals:
+ 1st portal: 9-31
+Character Positions:
+ Double Jumper on 103
+ Fortune Teller on 10",did not win even though passed 100,0,0,0,1,1.0,0,1,0,0,1.0,0,distilbert,0,0.7552671,0.24473296,Illegal

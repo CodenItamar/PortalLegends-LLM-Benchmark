@@ -1,0 +1,1296 @@
+num_sample,validity,player_type_name,prompt,move_desc,use_of_own_power,use_of_other_power,wrong_use_of_die,board_state,winning,portal,many_characters,going_backwards,overloaded_tile,invalid_moves,label
+10,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 7-22
+2nd portal: 60-81
+Character Positions:
+Double Jumper on 5
+Gold Miner on 42
+Move: Double Jumper rolls 2, lands on 6, lands on 7, warps to 22
+board post-move:
+Portals:
+1st portal: 7-22
+2nd portal: 60-81
+Character Positions:
+Double Jumper on 22
+Gold Miner on 42","legal use of portal, legal use of power",1,0,0,0,0.0,1,1,0,0,0.0,1
+93,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 8–50
+  2nd portal: 33–61
+ Character Positions:
+  Gold Miner on 6
+  Giant on 7
+ Move: Gold Miner rolls 2, lands on 8, then warps to 50
+  Gold Miner rolls 4, lands on 54
+ Board post-move:
+  Portals:
+  1st portal: 8–50
+  2nd portal: 33–61
+ Character Positions:
+  Gold Miner on 54
+  Giant on 7",דילוג מעל שחקן אחר וטיפוס בשער,1,0,0,0,1.0,1,0,0,0,0.0,1
+119,Illegal,Gold Miner,"board pre-move:
+  Portals:
+ 1st portal: 9-11
+ Character Positions:
+ gold miner on 92
+ Giant on 99
+ Move: gold miner rolls 1, lands on 93
+ Gold Miner rolls 6, lands on 99
+ board post-move:
+  Portals:
+ 1st portal: 9-11
+  Character Positions:
+  gold miner on 99
+ Giant on 99","נוחת על אותה משבצת עם שחקן אחר, זורק בפעם השנייה 6 ולא 1-4",1,0,1,0,0.0,1,0,1,0,0.0,0
+91,Legal,Mystic,"board pre-move:
+ Portals:
+ 1st portal: 45-66
+2nd portal: 1-90
+Character Positions:
+ Mystic on 12
+Giant on 19
+Move: Mystic rolls 4, lands on 4.
+board post-move:
+ Portals:
+  1st portal: 45-66
+2nd portal: 1-90
+Character Positions:
+ Mystic on 12
+Gold miner on 19
+Move: Mystic rolls 4, lands on 4.",מיסטיק וחברים,0,0,0,0,0.0,0,1,1,0,0.0,1
+18,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 15-30
+2nd portal: 25-55
+Character Positions:
+Portal Explorer on 14
+Double Jumper on 13
+Move: Double Jumper rolls 2, lands on 14, lands on 15, warps to 30
+board post-move:
+Portals:
+1st portal: 15-30
+2nd portal: 25-55
+Character Positions:
+Portal Explorer on 14
+Double Jumper on 30","legal use of power, legal use of portal",1,0,0,0,0.0,1,1,0,0,0.0,1
+26,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 13-39
+Character Positions:
+ Double Jumper on 38
+ Mystic on 13
+Move: Double Jumper rolls 2, lands on 40, lands on 39
+board post-move:
+ Portals:
+ 1st portal: 13-39
+Character Positions:
+ Double Jumper on 39
+ Mystic on 13",wrong advancement - going forward and than backwards,1,0,1,0,0.0,0,1,1,0,1.0,0
+124,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 20-87
+ 2st portal: 13-43
+ Character Positions:
+ gold miner on 84
+ Move: gold miner rolls 3, lands on 87, then warps to 20
+ Gold Miner rolls 2, lands on 22 and wins
+ board post-move:
+  Portals:
+  1st portal: 20-87
+ 2st portal: 13-43
+  Character Positions:
+  gold miner on 84",מגיע למספר שאינו 100 ומנצח. יורד בשער.,1,0,0,1,1.0,0,0,0,0,0.0,0
+114,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 42-53
+ Character Positions:
+  Gold Miner on 41
+ Move: gold miner rolls 5, lands on 46. 
+ Gold miner rolls 7 and moves to 53
+ board post-move:
+  Portals:
+  1st portal: 42-53
+ Character Positions:
+  Gold Miner on 53",זריקת קוביה של 7 במקום 1-4,1,0,1,0,0.0,0,0,0,0,0.0,0
+110,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 31-60
+ Character Positions:
+  gold miner on 30
+ Move: gold miner rolls 1, lands on 31, then warps to 60.
+ board post-move:
+  Portals:
+  1st portal: 31-60
+ Character Positions:
+  gold miner on 33",זורק פעם אחת במקום פעמיים,1,0,1,0,0.0,0,0,0,0,0.0,0
+30,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 11-28
+Character Positions:
+ Double Jumper on 10
+ Mystic on 11
+Move: Double Jumper rolls 1, lands on 11.
+board post-move:
+ Portals:
+ 1st portal: 11-28
+Character Positions:
+ Double Jumper on 11
+ Mystic on 11","no portal used, overloaded tile",0,0,0,0,0.0,1,1,0,1,1.0,0
+44,Legal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 30-40
+Character Positions:
+ Double Jumper on 10
+ Mystic on 10
+Move: Double Jumper rolls 2, lands on 11, lands on 12.
+board post-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 12
+ Mystic on 10",Valid power usage,1,0,0,0,0.0,0,1,0,1,0.0,1
+48,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 5
+ Mystic on 6
+Move: Double Jumper rolls 2, lands on 7
+board post-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 7
+ Mystic on 6",wrong portal place post move,0,0,0,1,0.0,0,1,0,0,0.0,0
+83,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 94-99
+2nd portal: 11-32
+3rd portal: 56-66
+Character Positions:
+ Mystic on 56
+Portal Explorer on 11
+Giant on 23
+Move: Mystic rolls 3.
+Mystic rolls 5.
+Mystic rolls 4.
+Mystic rolls 2 lands on 58.
+board post-move:
+ Portals:
+ 1st portal: 94-99
+2nd portal: 11-32
+3rd portal: 56-66
+Character Positions:
+ Mystic on 58
+Portal Explorer on 11
+Giant on 23",מיסטיק מטילה 4 פעמים,1,0,0,0,0.0,0,0,1,0,0.0,0
+145,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 25-40
+ Character Positions:
+  gold miner on 24
+ Move: gold miner rolls 1, lands on 25, then warps to 40. 
+ Gold miner rolls 2, lands on 42.
+ board post-move:
+  Portals:
+  1st portal: 25-40
+ Character Positions:
+  gold miner on 42",מטפס בשער,1,0,0,0,1.0,0,0,0,0,0.0,1
+98,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 9–44
+  2nd portal: 15–33
+ Character Positions:
+  Gold Miner on 43
+ Giant on 14
+ Move: Gold Miner rolls 1, lands on 44, Warps to 9
+  Gold Miner rolls 2, moves to 11
+ Board post-move:
+  Portals:
+  1st portal: 9–44
+  2nd portal: 15–33
+ Character Positions:
+  Gold Miner on 11
+ Giant on 14",ירידה בשער,1,0,0,0,1.0,1,0,0,0,0.0,1
+122,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 50-97
+ 2st portal: 10-13
+ Character Positions:
+ gold miner on 49
+ Move: gold miner rolls 1, lands on 50, then warps to 97
+ Gold Miner rolls 3, lands on 100
+ board post-move:
+  Portals:
+  1st portal: 50-97
+ 2st portal: 10-13 
+  Character Positions:
+  gold miner on 100","מגיע ל100 , לא כתוב שמנצח. מטפס בשער.",1,0,0,1,1.0,0,0,0,0,0.0,0
+31,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 6-36
+Character Positions:
+ Double Jumper on 5
+ Fortune Teller on 50
+Move: Double Jumper rolls 3, lands on 6, warps to 36, lands on 38
+board post-move:
+ Portals:
+ 1st portal: 6-36
+Character Positions:
+ Double Jumper on 8
+ Fortune Teller on 50",split an odd number while using portal,1,0,1,0,0.0,1,1,0,0,1.0,0
+136,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 65-90
+ 2st portal: 90-100
+ Character Positions:
+ gold miner on 84
+ Move: gold miner rolls 3, lands on 87
+ Gold Miner rolls 2, lands on 90, then warps to 100, and win
+ board post-move:
+  Portals:
+  1st portal: 65-90
+ 2st portal: 99-100
+  Character Positions:
+  gold miner on 100","הולך מספר לא נכון של צעדים, מטפס בשער שמוביל אותו ל100 ומנצח",1,0,1,1,1.0,0,0,0,0,0.0,0
+34,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 17-45
+Character Positions:
+ Double Jumper on 16
+ Fortune Teller on 17
+Move: Double Jumper rolls 2, lands on 17, lands on 18.
+board post-move:
+ Portals:
+ 1st portal: 17-45
+Character Positions:
+ Double Jumper on 18
+ Fortune Teller on 17",ignoring the portal while going over it when power is used,1,0,0,0,0.0,1,1,0,1,1.0,0
+16,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 6-28
+2nd portal: 73-80
+Character Positions:
+Portal Explorer on 6
+Double Jumper on 25
+Move: Double Jumper rolls 3, lands on 28, warps to 6.
+board post-move:
+Portals:
+1st portal: 6-28
+2nd portal: 73-80
+Character Positions:
+Portal Explorer on 6
+Double Jumper on 6",legal warp backwards,0,0,0,0,0.0,1,1,1,1,0.0,1
+134,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 51-85
+ 2st portal: 21-23
+ Character Positions:
+ gold miner on 80
+ Move: gold miner rolls 4, lands on 85, then warps to 51
+ Gold Miner rolls 2, lands on 53
+ board post-move:
+  Portals:
+  1st portal: 51-85
+ 2st portal: 21-23 
+ Character Positions:
+  gold miner on 53",מתקדם מספר לא נכון של צעדים. יורד בשער,1,0,0,0,1.0,0,0,0,1,0.0,0
+77,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 25-60
+Character Positions:
+ Mystic on 24
+Move: Mystic rolls 3, lands on 33.
+board post-move:
+ Portals:
+ 1st portal: 25-60
+Character Positions:
+ Mystic on 33",מיסטיק - מתקדמת יותר מדיי,0,0,0,0,0.0,0,0,0,0,1.0,0
+64,Legal,Mystic,"board pre-move:
+ Portals:
+ 1st portal: 20-50
+Character Positions:
+ Mystic on 19
+Move: Mystic rolls 1, lands on 20, then warps to 50.
+board post-move:
+ Portals:
+ 1st portal: 20-50
+Character Positions:
+ Mystic on 50
+",מיסטיק - הטלה מעבר בפורטל ואז הטלה,0,0,0,0,0.0,0,1,0,0,0.0,1
+27,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 9-31
+Character Positions:
+ Double Jumper on 99
+ Fortune Teller on 10
+Move: Double Jumper rolls 4, lands on 103
+board post-move:
+ Portals:
+ 1st portal: 9-31
+Character Positions:
+ Double Jumper on 103
+ Fortune Teller on 10",did not win even though passed 100,0,0,0,1,1.0,0,1,0,0,1.0,0
+87,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 87-93
+2nd portal: 10-83
+3rd portal: 47-59
+Character Positions:
+ Mystic on 65
+Portal Explorer on 39
+Double Jumper on 19
+Giant on 72
+Gold Miner on 98
+Move: Mystic rolls 4.
+Mystic rolls 5, lands on 70, warps to 50.
+board post-move:
+ Portals:
+1st portal: 87-93
+2nd portal: 10-83
+3rd portal: 47-59
+Character Positions:
+ Mystic on 50
+Portal Explorer on 39
+Double Jumper on 19
+Giant on 72
+Gold Miner on 98",משתמשת בפורטל לא קיים,1,0,0,0,0.0,0,1,1,0,0.0,0
+45,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 30-51
+Character Positions:
+ Double Jumper on 10
+ Mystic on 10
+Move: Double Jumper rolls 6, lands on 11, lands on 12.
+board post-move:
+ Portals:
+ 1st portal: 30-51
+Character Positions:
+ Double Jumper on 12
+ Mystic on 10",wrong use of die - acts as if he rolled 2,1,0,1,0,0.0,0,1,0,0,1.0,0
+89,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 82-93
+2nd portal: 46-83
+3rd portal: 9-22
+Character Positions:
+ Mystic on 15
+Fortune Teller on 87
+Double Jumper on 35
+Move: Mystic rolls 4.
+Mystic rolls 5, lands on 10.
+board post-move:
+ Portals:
+ 1st portal: 82-93
+2nd portal: 46-83
+3rd portal: 9-22
+Character Positions:
+ Mystic on 10
+Fortune Teller on 87
+Double Jumper on 35",מיסטיק הולכת אחורה,1,0,0,0,0.0,1,0,1,0,1.0,0
+37,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 5
+ Mystic on 6
+Move: Double Jumper rolls 2, lands on 6, lands on 8.
+board post-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 8
+ Mystic on 6",split 2 to 1 and 2 instead of 1 and 1. also stepped on a portal and did not warp,1,0,1,0,0.0,1,1,0,1,1.0,0
+24,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 8-30
+Character Positions:
+ Double Jumper on 6
+ Mystic on 40
+Move: Double Jumper rolls 4, lands on 8, warps to 30, lands on 33
+board post-move:
+ Portals:
+ 1st portal: 8-30
+Character Positions:
+ Double Jumper on 30
+ Mystic on 40",wrong advancement after using portal,1,0,1,0,0.0,1,1,0,0,1.0,0
+29,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 3-20
+Character Positions:
+ Double Jumper on 2
+ Gold Miner on 20
+Move: Double Jumper rolls 2, lands on 4, lands on 6.
+board post-move:
+ Portals:
+ 1st portal: 3-20
+Character Positions:
+ Double Jumper on 6
+ Gold Miner on 20",multiplied the outcome of the die instead of spliting it,1,0,1,0,0.0,0,1,0,0,1.0,0
+88,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 20-50
+Character Positions:
+ Mystic on 65
+Move: Mystic rolls 4.
+Mystic rolls 5, lands on 72.
+board post-move:
+ Portals:
+ 1st portal: 20-50
+Character Positions:
+ Mystic on 72",מיסטיק מתקדמת יותר מדיי,1,0,0,0,0.0,0,0,0,0,1.0,0
+65,Illegal,Mystic,"board pre-move:
+ Portals:
+ 1st portal: 12-40
+Character Positions:
+ Mystic on 11
+Move: Mystic rolls 1, lands on 12. 
+board post-move:
+ Portals:
+ 1st portal: 12-40
+Character Positions:
+ Mystic on 12
+",מיסטיק - התעלמות מפורטל,0,0,0,0,0.0,1,0,0,0,0.0,0
+60,Legal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 80-98
+Character Positions:
+ Double Jumper on 77
+Move: Double Jumper rolls 6, lands on 80, warps to 98 lands on 100 and wins.
+board post-move:
+ Portals:
+ 1st portal: 80-98
+Character Positions:
+ Double Jumper on 100","legal use of power, use of portal, winning",1,0,0,0,1.0,1,0,0,0,0.0,1
+43,Legal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 30-40
+Character Positions:
+ Double Jumper on 10
+ Mystic on 10
+Move: Double Jumper rolls 2, lands on 12.
+board post-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 12
+ Mystic on 10",Valid Normal Move,0,0,0,0,0.0,0,1,0,1,0.0,1
+112,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 20-59
+ Character Positions:
+  gold miner on 19
+ Move: Gold Miner rolls 2, lands on 24
+ Gold miner rolls 1, lands on 25
+ board post-move:
+  Portals:
+  1st portal: 20-59
+ Character Positions:
+  gold miner on 25",מתקדם מספר לא נכון של צעדים,1,0,0,0,0.0,0,0,0,1,0.0,0
+21,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 10-40
+Character Positions:
+ Double Jumper on 8
+ Mystic on 20
+Move: Double Jumper rolls 3, lands on 10, lands on 11.
+board post-move:
+ Portals:
+ 1st portal: 10-40
+Character Positions:
+ Double Jumper on 11
+ Mystic on 20","split an odd number
+omly allowed to split and even die roll outcome",1,0,0,0,0.0,0,1,0,0,1.0,0
+92,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 12–45
+  2nd portal: 27–53
+ Character Positions:
+  Gold Miner on 1
+  Mystic on 6
+ Move: Gold Miner rolls 3, lands on 4
+ Gold Miner rolls 2, lands on 6
+ Board post-move:
+  Portals:
+  1st portal: 12–45
+  2nd portal: 27–53
+ Character Positions:
+  Gold Miner on 6
+  Mystic on 6",שני שחקנים על אותה משבצת,1,0,0,0,0.0,1,0,1,0,0.0,1
+150,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 27-55
+ Character Positions:
+  gold miner on 21
+  Double Jumper on 23
+ Move: Gold Miner rolls 4, lands on 25
+ Gold miner rolls 2, lands on 27
+ board post-move:
+  Portals:
+  1st portal: 27-55
+ Character Positions:
+  gold miner on 27
+  Double Jumper on 23","משחק רגיל בלי שום דבר מיוחד, מדלג מעל דמות אחרת",1,0,0,0,0.0,1,0,0,0,0.0,1
+78,Legal,Mystic,"board pre-move:
+ Portals:
+ 1st portal: 15-43
+2nd portal: 11-50
+3rd portal: 70-90
+Character Positions:
+ Mystic on 12
+Move:Mystic rolls 6.
+ Mystic rolls 3, lands on 15, warps to 43.
+ Portals:
+ 1st portal: 15-43
+2nd portal: 11-50
+3rd portal: 70-90Character Positions:
+ Mystic on 43",מיסטיק - עוברת בפורטל,1,0,0,0,0.0,0,1,0,0,0.0,1
+28,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 14-44
+Character Positions:
+ Double Jumper on 43
+ Mystic on 14
+Move: Double Jumper rolls 2 , lands on 44, warps to 14, lands on 13
+board post-move:
+ Portals:
+ 1st portal: 14-44
+Character Positions:
+ Double Jumper on 13
+ Mystic on 14",kept going backwards after traveling backwards in the portal,1,0,1,0,,1,1,1,1,1.0,0
+148,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 15-67
+ 2st portal: 12-19
+ Character Positions:
+ gold miner on 63
+ Mystic on 17
+ Move: gold miner rolls 4, lands on 67, then warps to 15
+ Gold Miner rolls 2, lands on 17
+ board post-move:
+  Portals:
+  1st portal: 15-55
+ 2st portal: 12-19
+ Character Positions:
+ gold miner on 17
+ Mystic on 17",יורד בשער ובסוף נוחת על משבצת שיש בה דמות אחרת,1,0,0,0,1.0,1,0,1,0,0.0,1
+82,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 18-39
+2nd portal: 29-89
+Character Positions:
+ Mystic on 16
+Portal Explorer on 92
+Gold Miner on 39
+Move: Mystic rolls 3.
+Mystic rolls 5.
+Mystic rolls 2 lands on 18, warps to 39.
+board post-move:
+ Portals:
+ 1st portal: 18-39
+2nd portal: 29-89
+Character Positions:
+ Mystic on 39
+Portal Explorer on 92
+Gold Miner on 39",מיסטיק מטילה 3 פעמים,1,0,0,0,0.0,0,1,1,0,0.0,0
+72,Legal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 20-55
+2nd portal:69-74
+3rd portal:34-54
+Character Positions:
+ Mystic on 29
+Giant on 56
+Move: Mystic rolls 2.
+Mystic rolls 5, lands on 34, warps to 54. 
+board post-move:
+ Portals:
+ 1st portal: 20-55
+2nd portal:69-74
+3rd portal:34-54
+Character Positions:
+ Mystic on 54
+Giant on 56", מיסטיק - חזרה אחורה בפורטל ואז קפיצה קדימה,1,0,0,0,0.0,0,1,1,0,0.0,1
+123,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 30-98
+ 2st portal: 12-19
+ Character Positions:
+ gold miner on 96
+ Move: gold miner rolls 1, lands on 97
+ Gold Miner rolls 4, lands on 100
+ board post-move:
+  Portals:
+  1st portal: 30-98
+ 2st portal: 12-19 
+  Character Positions:
+  gold miner on 100","מגיע למספר גדול מ100, ולא כתוב שמנצח.",1,0,0,1,0.0,0,0,0,0,0.0,0
+13,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 18-48
+Character Positions:
+Double Jumper on 16
+Fortune Teller on 75
+Move: Double Jumper rolls 2, lands on 18, warps to 48.
+board post-move:
+Portals:
+1st portal: 18-48
+Character Positions:
+Double Jumper on 48
+Fortune Teller on 75",legal use of portal,0,0,0,0,0.0,1,0,0,0,0.0,1
+20,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 19-49
+Character Positions:
+Double Jumper on 18
+Move: Double Jumper rolls 2, lands on 20.
+board post-move:
+Portals:
+1st portal: 19-49
+Character Positions:
+Double Jumper on 20",legal move,0,0,0,0,0.0,0,0,0,0,0.0,1
+84,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 87-92
+2nd portal: 10-32
+3rd portal: 56-66
+Character Positions:
+ Mystic on 65
+Portal Explorer on 87
+Move: Mystic rolls 3.
+Mystic rolls 1, lands on 66.
+board post-move:
+ Portals:
+ 1st portal: 87-92
+2nd portal: 10-32
+3rd portal: 56-66
+Character Positions:
+ Mystic on 66
+Portal Explorer on 87",מיסטיק לא נכנסת לפורטל,1,0,0,0,0.0,0,0,1,0,0.0,0
+139,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 44-47
+ 2st portal: 20-46
+ Character Positions:
+ gold miner on 41
+ Mystic on 49
+ Move: gold miner rolls 3, lands on 44, then warps to 47
+ Gold Miner rolls 2, lands on 49
+ board post-move:
+  Portals:
+  1st portal: 18-87
+ 2st portal: 20-43
+  Character Positions:
+ gold miner on 49
+ Mystic on 49","טיפס בשער, דמות על אותה משבצת",1,0,0,0,1.0,1,0,1,0,0.0,1
+2,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 10-40
+Character Positions:
+Double Jumper on 38
+Move: Double Jumper rolls 2, lands on 40, warps to 10
+board post-move:
+Portals:
+1st portal: 10-40
+Character Positions:
+Double Jumper on 10",legal portal warp,0,0,0,0,0.0,1,0,1,0,0.0,1
+138,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 55-69
+ 2st portal: 24-26
+ Character Positions:
+ gold miner on 23
+ Move: gold miner rolls 3, lands on 26, then warps to 24
+ Gold Miner rolls 2, lands on 26, then warps to 24
+ board post-move:
+  Portals:
+  1st portal: 55-69
+ 2st portal: 61-70
+  Character Positions:
+  gold miner on 24",נפל פעמיים באותו השער,1,0,0,0,1.0,0,0,0,0,0.0,1
+67,Legal,Mystic,"board pre-move:
+ Portals:
+ 1st portal: 3-39
+Character Positions:
+ Mystic on 1
+Move: Mystic rolls 2, lands on 3, warps to 39.
+board post-move:
+ Portals:
+ 1st portal: 8-39
+Character Positions:
+ Mystic on 39",מיסטיק עוברת בפורטל,0,0,0,0,0.0,1,0,0,0,0.0,1
+121,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 18-87
+ 2st portal: 20-43
+ Character Positions:
+ gold miner on 84
+ Move: gold miner rolls 3, lands on 87, then warps to 18
+ Gold Miner rolls 2, lands on 20, then warps to 43
+ Gold Miner rolls 4, lands on 47
+ board post-move:
+  Portals:
+  1st portal: 18-87
+ 2st portal: 20-43
+  Character Positions:
+  gold miner on 47","יורד ואז מטפס בשער, מטיל 3 פעמים סה""כ מספרים בין 1-4",1,0,1,0,1.0,0,0,0,0,0.0,0
+103,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 25–55
+ Character Positions:
+  Gold Miner on 62
+ Mystic on 63
+ Move: Gold Miner rolls 1, lands on 63
+  Gold Miner rolls 1, lands on 64 
+ Board post-move:
+  Portals:
+  1st portal: 25–55
+ Character Positions:
+  Gold Miner on 64 
+ Mystic on 63","שני שחקנים על אותה משבצת אחרי הזריקה הראשונה, ואז דילוג מעל שחקן",1,0,0,0,0.0,1,0,1,0,0.0,1
+99,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 82–98
+ Character Positions:
+  Gold Miner on 80
+ Move: Gold Miner rolls 2, lands on 98
+ Gold Miner rolls 4, lands on 100 and wins
+ Board post-move:
+  Portals:
+  1st portal: 82–98
+ Character Positions:
+  Gold Miner on 100",ניצחון בזריקה הראשונה במספר גדול מ100,1,0,0,1,0.0,0,0,0,0,0.0,1
+17,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 10-40
+2nd portal: 58-62
+Character Positions:
+Mystic on 12
+Double Jumper on 3
+Move: Double Jumper rolls 6, lands on 6, lands on 9.
+board post-move:
+Portals:
+1st portal: 10-40
+2nd portal: 58-62
+Character Positions:
+Mystic on 12
+Double Jumper on 9",legal use of power,1,0,0,0,0.0,0,1,0,0,0.0,1
+3,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 12-36
+Character Positions:
+Double Jumper on 10
+Move: Double Jumper rolls 4, lands on 12, warps to 36, lands on 38.
+board post-move:
+Portals:
+1st portal: 12-36
+Character Positions:
+ Double Jumper on 38",legal use of power and portal warp,1,0,0,0,0.0,0,0,0,0,0.0,1
+127,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 81-87
+ 2st portal: 20-42
+ Character Positions:
+ gold miner on 84
+ Move: gold miner rolls 3, lands on 87, then warps to 81
+ Gold Miner rolls 2, lands on 79
+ board post-move:
+  Portals:
+  1st portal: 81-87
+ 2st portal: 20-42
+  Character Positions:
+  gold miner on 79","בתור הראשון יורד בשער, בתור השני הולך אחורה.",1,0,0,0,1.0,0,1,0,0,0.0,0
+38,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 5-46
+Character Positions:
+ Double Jumper on 7
+ Mystic on 10
+Move: Double Jumper rolls 2, lands on 8, lands on 10.
+board post-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 10
+ Mystic on 10",split 2 to 1 and 2 instead of 1 and 1.,1,0,1,0,0.0,0,1,0,1,1.0,0
+79,Illegal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 12-40
+2nd portal: 13-34
+3rd portal: 50-65
+4th portal: 80-91
+Character Positions:
+ Mystic on 11
+Fortunr Teller on 20
+Gold Miner on 35
+Move: Mystic rolls 3.
+Mystics rolls 5, lands on 14.
+board post-move:
+ Portals:
+ 1st portal: 12-40
+2nd portal: 13-34
+3rd portal: 50-65
+4th portal: 80-91
+Character Positions:
+ Mystic on 14.
+Fortunr Teller on 20
+Gold Miner on 35",מיסטיק מתקדמת יותר מדיי,1,0,0,0,0.0,0,0,1,0,1.0,0
+19,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 8-33
+2nd portal: 50-60
+Character Positions:
+Giant on 45
+Double Jumper on 31
+Move: Double Jumper rolls 2, lands on 33, warps to 8
+board post-move:
+Portals:
+1st portal: 8-33
+2nd portal: 50-60
+Character Positions:
+Giant on 45
+Double Jumper on 8","legal warp backwards, legal use of power",0,0,0,0,0.0,1,1,1,0,0.0,1
+53,Legal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 17-36
+Character Positions:
+ Double Jumper on 58
+Move: Double Jumper rolls 4, lands on 62.
+board post-move:
+ Portals:
+ 1st portal: 17-36
+Character Positions:
+ Double Jumper on 64",normal move,0,0,0,0,0.0,0,0,0,0,0.0,1
+146,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 50-65
+ 2st portal: 20-30
+ Character Positions:
+ gold miner on 48
+ Move: gold miner rolls 4, lands on 50, warps to 65
+ Gold Miner rolls 1, lands on 66
+ board post-move:
+  Portals:
+  1st portal: 50-65
+ 2st portal: 20-30
+ Character Positions:
+ gold miner on 66",מטפס בשער,1,0,0,0,1.0,0,0,0,0,0.0,1
+144,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 18-87
+ 2st portal: 20-43
+ Character Positions:
+ gold miner on 84
+ Move: gold miner rolls 3, lands on 87, then warps to 18
+ Gold Miner rolls 2, lands on 20, then warps to 43
+ board post-move:
+  Portals:
+  1st portal: 18-87
+ 2st portal: 20-43
+  Character Positions:
+  gold miner on 43",מטפס פעמיים בשער,1,0,0,0,1.0,0,0,0,0,0.0,1
+58,Legal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 15-56
+Character Positions:
+ Double Jumper on 38
+ Mystic on 6
+Move: Double Jumper rolls 6, lands on 41, lands on 44.
+board post-move:
+ Portals:
+ 1st portal: 15-56
+Character Positions:
+ Double Jumper on 44
+ Mystic on 6",legal use of power,1,0,0,0,0.0,0,1,0,0,0.0,1
+6,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 16-45
+Character Positions:
+Double Jumper on 14
+Move: Double Jumper rolls 1, lands on 15.
+board post-move:
+Portals:
+1st portal: 16-45
+Character Positions:
+Double Jumper on 45",legal move,0,0,0,0,0.0,0,0,0,0,0.0,1
+40,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 10-15
+Character Positions:
+ Double Jumper on 20
+Move: Double Jumper rolls 4, lands on 50, lands on 24
+board post-move:
+ Portals:
+ 1st portal: 10-15
+Character Positions:
+ Double Jumper on 24",the split is invalid,1,0,0,0,0.0,0,0,1,0,1.0,0
+59,Legal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 5
+Move: Double Jumper rolls 4, lands on 7, lands on 9.
+board post-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 9",legal use of power,1,0,0,0,0.0,0,0,0,0,0.0,1
+109,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 29-63
+ Character Positions:
+  gold miner on 28
+  Giant on 8
+ Move: gold miner rolls 3, lands on 31
+ Gold miner rolls 5, lands on 36
+ board post-move:
+  Portals:
+  1st portal: 29-63
+ Character Positions:
+  gold miner on 36
+  Giant on 8",משחק בתור השני 5 במקום 1-4,1,0,1,0,0.0,1,0,0,0,0.0,0
+73,Legal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 10-45
+2nd portal: 40-60
+Character Positions:
+ Mystic on 59
+Move: Mystic rolls 1, lands on 60, warps to 40. 
+board post-move:
+ Portals:
+ 1st portal: 10-45
+2nd portal: 40-60
+Character Positions:
+ Mystic on 40",מיסטיק - חוזרת אחורה בהטלה ראשונה,0,0,0,0,0.0,0,1,0,0,0.0,1
+94,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 10-20
+  2st portal: 13-40
+ Character Positions:
+  Gold Miner on 18
+  Mystic on 25
+ Move: Gold Miner rolls 2, lands on 20, then Warps to 10
+  Gold Miner rolls 3, lands on 13, then warps to 40
+ Board post-move:
+  Portals:
+  1st portal: 10-20
+  2st portal: 13-40
+ Character Positions:
+  Gold Miner on 40
+  Mystic on 25",ירידה בשער ואז טיפוס בשער,1,0,0,0,1.0,1,0,0,0,0.0,1
+129,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 50-65
+ 2st portal: 20-30
+ Character Positions:
+ gold miner on 48
+ Move: gold miner rolls 4, lands on 50, warps to 65, lands on 67
+ Gold Miner rolls 1, lands on 68
+ board post-move:
+  Portals:
+  1st portal: 50-65
+ 2st portal: 20-30
+ Character Positions:
+ gold miner on 68","משתמש בכוח של double jumper 
+ בנוסף לכוח שלו. מטפס בשער",1,1,0,0,1.0,0,0,0,0,0.0,0
+14,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 20-42
+Character Positions:
+Double Jumper on 41
+Fortune Teller on 77
+Move: Double Jumper rolls 1, lands on to 42, warps to 20.
+board post-move:
+Portals:
+1st portal: 20-42
+Character Positions:
+Double Jumper on 20
+Fortune Teller on 77",legal warp backwards,0,0,0,0,,1,1,0,0,0.0,1
+33,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 10-42
+Character Positions:
+ Double Jumper on 41
+ Gold Miner on 10
+Move: Double Jumper rolls 2, lands on 43, warps to 10
+board post-move:
+ Portals:
+ 1st portal: 10-42
+Character Positions:
+ Double Jumper on 10
+ Gold Miner on 10",warped as if the double jumper used it's power while he didn't,0,0,1,0,,1,1,1,1,0.0,0
+75,Legal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 10-25
+2nd portal: 95-97
+3rd portal: 23-47
+Character Positions:
+ Mystic on 13
+Giant on 48
+Gold MIner on 15
+Move: Mystic rolls 6, lands on 19. 
+board post-move:
+Portals:
+ 1st portal: 10-25
+2nd portal: 95-97
+3rd portal: 23-47
+Character Positions:
+ Mystic on 19
+Giant on 48
+Gold MIner on 15",מיסטיק - מדלגת על דמות,0,0,0,0,0.0,0,0,1,0,0.0,1
+97,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 10–30
+ 2st portal: 70-89
+ 3st portal: 90-100
+ Character Positions:
+  Gold Miner on 67
+ Move: Gold Miner rolls 3, lands on 70, then warps to 89
+  Gold Miner rolls 1, lands on 90, then warps to 100 and wins
+ Board post-move:
+  Portals:
+  1st portal: 10–30
+ 2st portal: 70-89
+ 3st portal: 90-10
+ Character Positions:
+  Gold Miner on 100","טיפוס בשני שערים, וניצחון על ידי טיפוס בשער שמוביל בדיוק ל100",1,0,0,1,1.0,0,0,0,0,0.0,1
+96,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 21–55
+ Character Positions:
+  Gold Miner on 20
+  Double Jumper on 25
+ Move: Gold Miner rolls 1, lands on 21, then Warps to 55
+ Gold Miner rolls 2, lands on 57
+ Board post-move:
+  Portals:
+  1st portal: 21–55
+ Character Positions:
+  Gold Miner on 57
+  Double Jumper on 25",טיפוס בשער בזריקה הראשונה,1,0,0,0,1.0,1,0,0,0,0.0,1
+39,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 20
+Move: Double Jumper rolls 4, lands on 22, lands on 24
+board post-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 24",did not go into portal,1,0,1,0,0.0,1,1,1,0,1.0,0
+100,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 97-100
+ 2st portal: 12-19
+ Character Positions:
+ gold miner on 96
+ double jumper on 22
+ Move: gold miner rolls 1, lands on 97, warps to 100 and wins
+ board post-move:
+  Portals:
+  1st portal: 30-98
+ 2st portal: 12-19 
+  Character Positions:
+  gold miner on 100
+ double jumper on 22",ירידה בשער בזריקה הראשונה,1,0,0,0,1.0,0,0,0,0,0.0,1
+141,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 30-98
+ 2st portal: 12-19
+ Character Positions:
+ gold miner on 96
+ double jumper on 22
+ Move: gold miner rolls 1, lands on 97
+ Gold Miner rolls 4, lands on 100 and wins
+ board post-move:
+  Portals:
+  1st portal: 30-98
+ 2st portal: 12-19 
+  Character Positions:
+  gold miner on 100
+ double jumper on 22",טיפס בשער למספר גדול ממאה וניצח.,1,0,0,1,0.0,0,0,0,0,0.0,1
+120,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 20-88
+ Character Positions:
+ gold miner on 99
+ Giant on 20
+ Mystic on 34
+ Move: gold miner rolls 5, lands on 100 and wins
+ board post-move:
+  Portals:
+  1st portal: 20-88
+  Character Positions:
+  gold miner on 100
+ Giant on 20
+ Mystic on 34","מנצח ע""י זריקה אחת של 5",1,0,1,1,0.0,1,0,0,0,0.0,0
+25,Illegal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 7-33
+Character Positions:
+ Double Jumper on 6
+ Gold Miner on 15
+Move: Double Jumper rolls 2, lands on 7, lands on 8.
+board post-move:
+ Portals:
+ 1st portal: 7-33
+Character Positions:
+ Double Jumper on 8
+ Gold Miner on 15",skipping a portal,1,0,0,0,0.0,1,1,0,0,1.0,0
+69,Legal,Mystic," Portals:
+ 1st portal: 18-60
+2nd portal: 99-100
+3rd portal: 25-40
+Character Positions:
+ Mystic on 17
+Fortune Teller on 20
+Move: Mystic rolls 3, lands on 20. 
+board post-move:
+ Portals:
+ 1st portal: 18-60
+Character Positions:
+ Mystic on 20
+Fortune Teller on 20",מיסטיק ועוד דמות מסיימות באותה משבצת,0,0,0,0,0.0,0,0,1,0,0.0,1
+149,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 25–55
+ Character Positions:
+  Gold Miner on 54
+ Mystic on 26
+ Move: Gold Miner rolls 1, lands on 55, then warps to 25
+  Gold Miner rolls 2, lands on 27
+ Board post-move:
+  Portals:
+  1st portal: 25–55
+ Character Positions:
+  Gold Miner on 27
+ Mystic on 26",יורד בשער ואז מדלג מעל שחקן אחר,1,0,0,0,1.0,1,0,0,0,0.0,1
+4,Legal,Double Jumper,"We are playing Portal Legends!
+board pre-move:
+Portals:
+1st portal: 5-20
+Character Positions:
+Double Jumper on 19
+Move: Double Jumper rolls 2, lands on 20, warps to 5, lands on 6
+board post-move:
+Portals:
+1st portal: 5-20
+Character Positions:
+ Double Jumper on 5","legal warp backwards, legal use of power",1,0,0,0,0.0,1,0,1,0,0.0,1
+111,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 25-40
+ Character Positions:
+  gold miner on 24
+ Move: gold miner rolls 1, lands on 25. 
+ Gold miner rolls 2, lands on 27.
+ board post-move:
+  Portals:
+  1st portal: 25-40
+ Character Positions:
+  gold miner on 27",לא נכנס בשער למרות שנוחת על שער,1,0,0,0,1.0,0,0,0,0,0.0,0
+55,Legal,Double Jumper,"We are playing Portal Legends!
+ board pre-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 99
+ Mystic on 20
+Move: Double Jumper rolls 2, lands on 100 and wins.
+board post-move:
+ Portals:
+ 1st portal: 6-22
+Character Positions:
+ Double Jumper on 100
+ Mystic on 20",normal winning,0,0,0,0,1.0,0,1,0,0,0.0,1
+151,Legal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 25-40
+ Character Positions:
+  gold miner on 24
+ Move: gold miner rolls 1, lands on 25, then warps to 40. 
+ Gold miner rolls 2, lands on 42.
+ board post-move:
+  Portals:
+  1st portal: 25-40
+ Character Positions:
+  gold miner on 42",מטפס בשער,1,0,0,0,1.0,0,0,0,0,0.0,1
+66,Legal,Mystic," board pre-move:
+ Portals:
+ 1st portal: 30-55
+ 2nd portal: 2-30
+Character Positions:
+ Mystic on 29
+Move: Mystic rolls 6. Mystic rolls 5, lands on 24.
+board post-move:
+ Portals:
+ 1st portal: 30-55
+ 2nd portal: 2-30
+Character Positions:
+ Mystic on 24
+",מיסטיק משתמשת בכוח שלה,1,0,0,0,0.0,0,0,0,0,0.0,1
+107,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 17-49
+ Character Positions:
+  gold miner on 16
+  Mystic on 12
+ Move: gold miner rolls 5, lands on 21
+ board post-move:
+  Portals:
+  1st portal: 17-49
+ Character Positions:
+  gold miner on 21
+  Mystic on 12",משחק פעם אחת 5 במקום פעמיים 1-4,1,0,1,0,0.0,1,0,0,0,0.0,0
+115,Illegal,Gold Miner,"board pre-move:
+  Portals:
+  1st portal: 26-44
+ 2st portal: 60-78
+ Character Positions:
+  Gold Miner on 77
+ Mystic on 77
+ Move: Gold Miner rolls 1, lands on 78, then warps to 60.
+ board post-move:
+  Portals:
+  1st portal: 26-44
+ 2st portal: 60-78
+ Character Positions:
+  Gold Miner on 60
+ Mystic on 77",זריקה פעם אחת במקום פעמיים,1,0,1,0,0.0,1,0,0,0,0.0,0
