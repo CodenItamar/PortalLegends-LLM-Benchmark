@@ -19,6 +19,13 @@ ANLP-Project-Pipeline/
 ```
 
 ---
+## Error Analysis Notebooks
+
+Detailed error analyses for each model are provided in the ⁠ error_analysis/ ⁠ directory:
+
+•⁠  ⁠[⁠ error_analysis/bert.ipynb ⁠](error_analysis/bert.ipynb)  
+•⁠  ⁠[⁠ error_analysis/distilbert.ipynb ⁠](error_analysis/distilbert.ipynb)  
+•⁠  ⁠[⁠ error_analysis/roberta.ipynb ⁠](error_analysis/roberta.ipynb)
 
 ## Setup
 
