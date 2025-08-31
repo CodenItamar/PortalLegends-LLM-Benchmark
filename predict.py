@@ -50,7 +50,7 @@ def list_available_models():
             
             # Find corresponding hyperparams file
             hyperparam_file = f"models/{model_name}_hyperparams_{timestamp}.json"
-            if hyperparam_file in hyperparam_files:
+            if os.path.normpath(hyperparam_file) in map(os.path.normpath, hyperparam_files):
                 models.append({
                     'model_name': model_name,
                     'timestamp': timestamp,

@@ -1,113 +1,97 @@
 # Portal Legends Move Classification
 
-This project investigates whether Large Language Models (LLMs) can infer rule-based reasoning from text alone, using Portal Legends game moves as a test case. The system classifies moves as legal or illegal based on natural language descriptions of game states.
+This project tests whether Large Language Models (LLMs) can infer rule-based reasoning from text alone, by classifying Portal Legends moves as **legal** or **illegal** from natural-language descriptions.
 
-## Project Structure
+---
+
+## Project Structure (minimal)
 
 ```
 ANLP-Project-Pipeline/
-├── configs/                    # Model configurations
-│   ├── base_config.py         # Base configuration class
-│   ├── bert_config.py         # BERT-specific configuration
-│   ├── distilbert_config.py   # DistilBERT-specific configuration
-│   ├── roberta_config.py      # RoBERTa-specific configuration
-│   └── new_model_template.py  # Template for adding new models
-├── src/                       # Source code
-│   ├── model_registry.py      # Model configuration registry
-│   └── [future modules]       # Training, evaluation, etc.
-├── main.py                    # Main execution script
-└── README.md                  # Project documentation
+├── configs/                  # Model configs (BERT / DistilBERT / RoBERTa)
+├── data/                     # CSV data (see Setup)
+├── models/                   # Trained model checkpoints (created by train.py)
+├── results/                  # Evaluation reports & predictions
+├── src/                      # Code (trainer, predict, registry, etc.)
+├── train.py                  # Train all three models
+├── predict.py                # Run predictions / reports
+└── README.md
 ```
+
+---
 
 ## Setup
 
-1. **Dependencies**
-   ```bash
-   pip install torch transformers pandas scikit-learn
-   ```
-
-2. **Dataset**
-   - Place `PortalLegendsMovesTagged.csv` in the project root directory
-   - Dataset should contain columns:
-     - PreMoveBoardState
-     - Move
-     - PostMoveBoardState
-     - VALIDITY (Legal/Illegal)
-
-## Usage
-
-Run experiments with default models:
+1. **Install dependencies**
 ```bash
-python main.py
+pip install torch transformers pandas scikit-learn
 ```
 
-Specify specific models to run:
+2. **Dataset**:
+Delete any pre-split files from `data/`:
+  - `data/train_data.csv`  
+  - `data/val_data.csv`  
+  - `data/test_data.csv`  
+
+The training script will (re)create the splits automatically.
+
+---
+
+## How to Run
+
+### 1) Train all three models
+Runs BERT, DistilBERT, and RoBERTa end-to-end (train → validate → save best).
 ```bash
-python main.py --models bert distilbert
+python train.py
 ```
+- Checkpoints and hyperparam files are saved in `models/`.
+- Logs/metrics are saved in `results/`.
 
-## Adding New Models
-
-1. **Create Configuration File**
-   - Copy `configs/new_model_template.py` to `configs/your_model_config.py`
-   - Follow the template instructions to implement your model configuration
-
-2. **Register the Model**
-   - Add your model import to `src/model_registry.py`
-   - Add your model to `DEFAULT_MODELS` in the registry
-
-Example:
-```python
-# configs/my_model_config.py
-from transformers import MyModel, MyTokenizer
-from configs.base_config import BaseModelConfig
-
-class MyModelConfig(BaseModelConfig):
-    def __init__(self):
-        super().__init__()
-        self.model_name = "my-model-name"
-        self.model_class = MyModel
-        self.tokenizer_class = MyTokenizer
+### 2) Predict
+Run the prediction script and choose **option 1** to generate predictions from **all** trained models.
+```bash
+python predict.py
+# When prompted in the console, type:
+1
 ```
+The script will scan `models/` for the latest checkpoints and produce per-model predictions and a comparison summary in `results/`.
 
-## Model Configurations
 
-Each model configuration inherits from `BaseModelConfig` and can specify:
-- Model and tokenizer classes
-- Model-specific parameters
-- Custom hyperparameter ranges
-- Special tokenization requirements
+---
 
-### Current Models
+## Tips & Troubleshooting
 
-1. **BERT**
-   - Base model: `bert-base-uncased`
-   - Learning rates: [1e-5, 3e-5, 5e-5]
+- **“No trained models found”**  
+  Ensure you ran `python train.py` and that `models/` contains files like `bert_model_*.pth` and matching `*_hyperparams_*.json`.  
+  If you run from an IDE, confirm the **working directory** is the project root.
 
-2. **DistilBERT**
-   - Base model: `distilbert-base-uncased`
-   - Learning rates: [2e-5, 4e-5, 6e-5]
+- **Windows path issues (slashes)**  
+  If you edited code, prefer `pathlib.Path` over raw strings and normalize paths when matching files.
 
-3. **RoBERTa**
-   - Base model: `roberta-base`
-   - Learning rates: [1e-5, 2e-5, 3e-5]
-   - Special tokenization: `add_prefix_space=True`
+- **Reproducibility**  
+  The split is recreated when the pre-split CSVs are absent. To keep a split fixed, do **not** delete `train_data.csv` / `val_data.csv` / `test_data.csv`.
 
-## Training Process
+---
 
-The system:
-1. Loads and preprocesses the dataset
-2. Splits data into train (60%), validation (20%), and test (20%) sets
-3. For each model:
-   - Trains on training data
-   - Performs hyperparameter search using validation data
-   - Evaluates final performance on test data
-4. Compares model performances
+## What the Scripts Do
 
-## Future Enhancements
+- **`train.py`**
+  1. Loads `data/PortalLegendsMovesTagged2.csv`
+  2. Creates train/val/test splits (if not already present)
+  3. Tokenizes (max length 128)
+  4. Trains with AdamW (`lr=2e-5`, batch size 8, early stopping)
+  5. Saves best checkpoint + hyperparams to `models/`
+  6. Writes metrics to `results/`
 
-- Training and evaluation pipelines
-- Model performance visualization
-- Additional models (T5, LLaMA 7B)
-- Few-shot learning experiments
-- Qualitative error analysis tools
+- **`predict.py`**
+  1. Lists available checkpoints in `models/`
+  2. On **option 1**, runs predictions with **all** models
+  3. Saves per-model outputs + a comparison table to `results/`
+
+---
+
+## Extending (optional)
+
+- To add a new model, copy `configs/new_model_template.py`, implement your config, and register it in `src/model_registry.py`.
+
+---
